@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/letterBubble.css" type="text/css" />
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<h1 class="text-center text-primary">Letter Bubble Game</h1>
+				<h5 class="text-center text-danger">THIS GAME IS FOR CHILDREN FIVE YEARS AND BELOW</h5>
+				<h5 class="text-center text-danger"> <span class="text-bold">Instructions: </span> Pronounce the alphabet and press the corresponding KEY on your keyboard</h5>
+				<P class="text-center text-primary">Note: Wait a while for the wrong keypressed to disapper before pressing the next key!</P>
+
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-md-2 bg-success ">
+				<h3 class="text-wrap text-center pt-5">Your Results: </h3>
+				<h3 id="playerResults" class="text-center"><span id="score">0</span></h3>
+			</div>
+
+			<div class="col-md-8" id="bubble-container">
+
+				<div class="aaa"></div>
+
+				<audio id="popSound" src="sound/pop.mp3"></audio>
+				<audio id="oouchSound" src="sound/oouch.mp3"></audio>
+			</div>
+
+
+			<div class="col-md-2 bg-danger">
+				<h3 id="" class="text-wrap text-center pt-5">Computer Results:</h3>
+				<h3 id="computerResults" class="text-center"><span id="score">0</span></h3>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/letterBubble.js"></script>
+</body>
+
+</html>
